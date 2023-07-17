@@ -113,7 +113,7 @@ button:hover{
     }
 }
 @media screen and (max-width:414px) {
-    .titlehead{
+    .container{
         display: block;
         height: auto;
     }

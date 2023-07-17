@@ -87,7 +87,7 @@ button:hover{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: bottom;
+    margin-bottom: 30px;
     background-color: #fff;
     border-radius: 25px;
     width: 200px;
@@ -110,6 +110,7 @@ button:hover{
         flex-wrap: wrap;
         flex-direction: column;
         row-gap: 45px;
+        margin-bottom: auto;
     }
 }
 @media screen and (max-width:414px) {

@@ -1,0 +1,126 @@
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    background-image: url(./img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+h1, p{
+    color: white;
+}
+h1{
+    font-size: 50px;
+    margin-bottom: 35px;
+}
+h2{
+    font-size: 25px;
+}
+p{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 95%;
+    max-width: 1280px;
+    height: 100vh;
+    margin: 0 auto;
+}
+.titlehead{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    padding: 30px;
+}
+.about{
+    display: flex;
+    gap: 20px;
+}
+.about >  button:nth-child(2){
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    transition:0,5s;
+}
+.about >  button:nth-child(2):hover{
+    color: #c20030;
+    border: 1px solid #c20030;
+}
+button{
+    cursor: pointer;
+    padding: 15px 35px;
+    border-radius: 50px;
+    border: none;
+    font-size: 15px;
+    font-weight: 800;
+    transition: 0,5s;
+}
+button:hover{
+    background: #c20030;
+    color: #fff;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    max-width: 1080px;
+    margin: 25px auto;
+    flex-wrap: wrap;
+}
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: bottom;
+    background-color: #fff;
+    border-radius: 25px;
+    width: 200px;
+    height: 190px;
+    box-shadow: 4px 4px 4px 0px #000;
+}
+.imageforitem{
+    width: 59px;
+    height: 59px;
+    margin-bottom: 20px;
+}
+.imageforitem > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+@media screen and(max-width:834px){
+    .content{
+        width:300px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        row-gap: 45px;
+    }
+}
+@media screen and (max-width:414px) {
+    .titlehead{
+        display: block;
+        height: auto;
+    }
+    h1{
+        text-align:center;
+    }
+    .about{
+        flex-direction:column;
+    }
+}
